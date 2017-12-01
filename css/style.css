@@ -18,14 +18,14 @@ header {
   width: 75%;
   height: 120px;
   margin: 0 auto;
-  display: block;
+  display: flex;
   padding-top: 40px;
+  justify-content: space-between;
 }
 
 .header-logo {
    height: 80px;
    width: 80px;
-   float: left;
  }
 
  .header-title {
@@ -42,7 +42,6 @@ header {
  }
 
  .header-divider {
-   display: block;
    width: 75%;
    margin: 0 auto;
    border: none;
@@ -51,10 +50,16 @@ header {
    background-color: #7d97ad; /* new IE */
  }
 
- .profile-photo {
-   height: 600px;
+ .hero {
+   display: flex;
+   justify-content: center;
    width: 75%;
-   display: block;
+   margin: 0 auto;
+ }
+
+ .profile-photo {
+   height: 100%;
+   width: 100%;
    margin: 0 auto;
    padding: 20px 0 20px 0;
    margin-bottom: 20px;
@@ -65,6 +70,11 @@ header {
   width: 75%;
   margin: 0 auto;
   padding-bottom: 30px;
+}
+
+.feature-header {
+  margin-left: 0;
+  height: auto;
 }
 
  .featured-title {
@@ -95,27 +105,44 @@ header {
 .flex-grid {
  display: flex;
  flex-wrap: wrap;
- }
-
-.col {
-flex: 1;
-padding: 5px;
+ flex-direction: row;
 }
 
+.col {
+ flex: 1;
+ padding: 5px;
+ margin: auto;
+}
+
+.footer {
+ display: flex;
+ justify-content: center;
+ margin: 30px;
+}
+
+.fa {
+  padding: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+}
 
 @media screen and (max-width: 700px) {
 
 
-   header {
+   .header {
      width: 75%;
      padding-top: 30px;
      height: 80px;
+     display: flex;
+     justify-content: space-between;
    }
 
   .header-logo {
      height: 50px;
      width: 50px;
-     float: left;
    }
 
    .header-title {
@@ -126,9 +153,12 @@ padding: 5px;
      font-size: 15px;
    }
 
+   .hero {
+     display: flex;
+     justify-content: center;
+   }
+
    .profile-photo {
-     width: 75%;
-     height: auto;
      padding-top: 20px;
    }
 
@@ -136,6 +166,11 @@ padding: 5px;
      text-align: center;
      width: 85%;
      padding: 0 20px 0 20px;
+   }
+
+   .feature-header {
+     margin-left: 0;
+     height: auto;
    }
 
    .featured-title {
@@ -149,6 +184,7 @@ padding: 5px;
    .project-photo {
      margin-top: 20px;
    }
+
    .project-link {
      text-align: center;
      text-decoration: underline;
@@ -158,8 +194,8 @@ padding: 5px;
 
 @media screen and (max-width: 1027px) {
   .flex-grid {
-    flex-wrap: wrap;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 30px;
   }
 
