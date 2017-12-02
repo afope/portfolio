@@ -1,11 +1,65 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
@@ -47,7 +101,7 @@ header {
    border: none;
    height: 4px;
    color: #7d97ad; /* old IE */
-   background-color: #7d97ad; /* new IE */
+   background: #7d97ad; /* new IE */
  }
 
  .hero {
@@ -61,7 +115,7 @@ header {
    height: 100%;
    width: 100%;
    margin: 0 auto;
-   padding: 20px 0 20px 0;
+   padding: 20px 0;
    margin-bottom: 20px;
  }
 
@@ -81,7 +135,7 @@ header {
    text-align: left;
    font-size: 30px;
    font-weight: 300;
-   padding: 20px 0 20px 0;
+   padding: 20px 0;
    color: #2d3c49;
  }
 
@@ -131,7 +185,6 @@ header {
 
 @media screen and (max-width: 700px) {
 
-
    .header {
      width: 75%;
      padding-top: 30px;
@@ -165,7 +218,7 @@ header {
    .featured-work {
      text-align: center;
      width: 85%;
-     padding: 0 20px 0 20px;
+     padding: 0 20px;
    }
 
    .feature-header {
@@ -177,7 +230,7 @@ header {
      text-align: left;
      font-size: 17px;
      font-weight: 300;
-     padding: 5px 0 5px 0;
+     padding: 5px 0;
      color: #2d3c49;
    }
 
@@ -198,5 +251,4 @@ header {
     flex-direction: column;
     padding-bottom: 30px;
   }
-
 }
